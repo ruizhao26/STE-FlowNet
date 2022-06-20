@@ -42,7 +42,7 @@ do
 done
 ```
 
-###  Prepare the ground truth of MVSEC for testing.
+#### Prepare the ground truth of MVSEC for testing.
 
 The test code is derived from [Spike-FlowNet](https://github.com/chan8972/Spike-FlowNet). In the original codes, the ```estimate_corresponding_gt_flow``` cost a lot of time. We implement this function before testing and save the estimated gt flow.
 
@@ -65,7 +65,7 @@ do
 done
 ```
 
-### Download the pretrained models
+#### Download the pretrained models
 
 The pretrained models for ```dt=1``` and ```dt=4``` can be download in the Google Drive link below
 
@@ -91,7 +91,7 @@ python3 main_steflow_dt4.py -e \
 
 ## Train
 
-### Some Useful Command-line arguments
+#### Some Useful Command-line arguments
 
 About training paths:
 
@@ -150,4 +150,4 @@ Arxiv version:
 
 Parts of this code were derived from [chan8972/Spike-FlowNet](https://github.com/chan8972/Spike-FlowNet). Please also consider to cite [Spike-FlowNet](https://link.springer.com/chapter/10.1007/978-3-030-58526-6_22) if you'd like to cite our paper.
 
-We thank [Chankyu Lee](https://github.com/chan8972) for replying our email about the evaluation details about ```outdoor_day1``` scene.
+We thank [Chankyu Lee](https://github.com/chan8972) for replying our email about the evaluation details about the ```outdoor_day1``` scene.
