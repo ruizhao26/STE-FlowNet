@@ -1,9 +1,13 @@
 # Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation.
 
 This repository contains the official source code for our paper:
+
 [Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation.](https://arxiv.org/pdf/2109.04871.pdf)
+
 AAAI 2022
+
 Ziluo Ding, Rui Zhao, Jiyuan Zhang, Tianxiao Gao, Ruiqin Xiong, Zhaofei Yu and Tiejun Huang
+
 Peking University
 
 ## Environments
@@ -90,17 +94,29 @@ python3 main_steflow_dt4.py -e \
 ### Some Useful Command-line arguments
 
 About training paths:
+
 ```--data```: your data path
+
 ```--savedir```: folder for saving training results
+
 About hyperparameter for training:
+
 ```--batch-size```: batch size for training
+
 ```--lr```: initial learning rate
+
 ```--milestones```: milestones for learning rate decay
+
 ```--gamma```: factor for learning rate decay
+
 About other training settings:
+
 ``` --workers```: number of workers to use
+
 ```--test-set```: the validation dataset during training
+
 ```--evaluate-interval```: how many epochs to evaluate after
+
 ```--print-freq```: how many iterations to print training details after
 
 All the command line arguments for hyperparameter tuning can be found in the `main_steflow_dt*.py` files.
