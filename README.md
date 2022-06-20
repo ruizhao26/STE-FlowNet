@@ -10,14 +10,12 @@ Peking University
 
 You will have to choose cudatoolkit version to match your compute environment. The code is tested on PyTorch 1.10.2+cu113 and spatial-correlation-sampler 0.3.0 but other versions might also work. 
 
-~~~bash
-```
+```bash
 conda create -n steflow python==3.9
 conda activate steflow
 conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
 pip3 install spatial-correlation-sampler matplotlib opencv-python h5py tensorboardX
 ```
-~~~
 
 We don't ensure that all the PyTorch versions can work well. For example, some PyTorch versions fail in encoding the flow ground truth since the data precision of the time stamps will be lost during conversion from PyTorch Tensor to Numpy array.
 
@@ -25,8 +23,7 @@ We don't ensure that all the PyTorch versions can work well. For example, some P
 
 Encode the events of MVSEC
 
-~~~bash
-```
+```bash
 # Encoding the Events of MVSEC dataset
 # You can set your data path in flow_gt_encoding.py or through argparser (--data)
 cd ./encoding
@@ -40,7 +37,6 @@ do
 	python3 split_encoding_torch.py -sp=5 -se=$ss -s
 done
 ```
-~~~
 
 ###  Prepare the ground truth of MVSEC for testing.
 
@@ -68,7 +64,9 @@ done
 ### Download the pretrained models
 
 The pretrained models for ```dt=1``` and ```dt=4``` can be download in the Google Drive link below
+
 [Link for pretrained models](https://drive.google.com/drive/folders/1EGwlpNZEqNYs23ZBSYUIHKwHJJM3kudu?usp=sharing)
+
 You can download the pretrained models to ```./ckpt```
 
 ## Evaluate
