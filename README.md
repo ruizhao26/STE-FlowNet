@@ -146,6 +146,12 @@ Arxiv version:
 }
 ```
 
+If you have questions about our code, you can contact:
+
+Ziluo Ding (ziluo@pku.edu.cn)
+
+Rui Zhao (ruizhao@stu.pku.edu.cn)
+
 ## Acknowledgement
 
 Parts of this code were derived from [chan8972/Spike-FlowNet](https://github.com/chan8972/Spike-FlowNet). Please also consider to cite [Spike-FlowNet](https://link.springer.com/chapter/10.1007/978-3-030-58526-6_22) if you'd like to cite our paper.
