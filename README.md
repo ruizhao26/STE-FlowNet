@@ -10,6 +10,17 @@ Ziluo Ding, Rui Zhao, Jiyuan Zhang, Tianxiao Gao, Ruiqin Xiong, Zhaofei Yu and T
 
 Peking University
 
+* [STEFlow](#Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation.)
+  * [Environments](#Environments)
+  * [Prepare the Data](*Prepare the Data)
+    * [Encode the events of MVSEC](*Encode the events of MVSEC)
+    * [Prepare the ground truth of MVSEC for Testing](*Prepare the ground truth of MVSEC for Testing)
+    * [Download the pretrained models](*Download the pretrained models)
+  * [Evaluate](*Evaluate)
+  * [Train](*Train)
+  * [Citation](*Citations)
+  * [Acknowledgement](*Acknowledgement)
+
 ## Environments
 
 You will have to choose cudatoolkit version to match your compute environment. The code is tested on PyTorch 1.10.2+cu113 and spatial-correlation-sampler 0.3.0 but other versions might also work. 
@@ -25,7 +36,7 @@ We don't ensure that all the PyTorch versions can work well. For example, some P
 
 ## Prepare the Data
 
-Encode the events of MVSEC
+### Encode the events of MVSEC
 
 ```bash
 # Encoding the Events of MVSEC dataset
@@ -42,7 +53,7 @@ do
 done
 ```
 
-#### Prepare the ground truth of MVSEC for testing.
+###  Prepare the ground truth of MVSEC for testing.
 
 The test code is derived from [Spike-FlowNet](https://github.com/chan8972/Spike-FlowNet). In the original codes, the ```estimate_corresponding_gt_flow``` cost a lot of time. We implement this function before testing and save the estimated gt flow.
 
@@ -65,7 +76,7 @@ do
 done
 ```
 
-#### Download the pretrained models
+### Download the pretrained models
 
 The pretrained models for ```dt=1``` and ```dt=4``` can be download in the Google Drive link below
 
@@ -89,9 +100,17 @@ python3 main_steflow_dt4.py -e \
 --pretrained './ckpt/steflow_dt4.pth.tar'
 ```
 
+
+
+Note that we have provided a better pretrained model for evaluation, which is slightly different with the original results shown in paper. In more detail, the model achieves better results in all three indoor scenes and demonstrates better generalization. However, the model degrates only in outdoor scene. The following table shows the detailed results.
+
+<img src="https://github.com/ruizhao26/STE-FlowNet/blob/main/fig/Results.png" width="100%">
+
+
+
 ## Train
 
-#### Some Useful Command-line arguments
+### Some Useful Command-line arguments
 
 About training paths:
 
@@ -126,7 +145,7 @@ All the command line arguments for hyperparameter tuning can be found in the `ma
 # for dt=1 case
 python3 main_steflow_dt1.py --lr 4e-4 -b 8
 # for dt=4 case
-python3 main_steflow_dt4.py --lr 3e-4 -b 8
+python3 main_steflow_dt4.py --lr 2e-4 -b 8
 ```
 
 ## Citations
@@ -146,14 +165,8 @@ Arxiv version:
 }
 ```
 
-If you have questions about our code, you can contact:
-
-Ziluo Ding (ziluo@pku.edu.cn)
-
-Rui Zhao (ruizhao@stu.pku.edu.cn)
-
 ## Acknowledgement
 
 Parts of this code were derived from [chan8972/Spike-FlowNet](https://github.com/chan8972/Spike-FlowNet). Please also consider to cite [Spike-FlowNet](https://link.springer.com/chapter/10.1007/978-3-030-58526-6_22) if you'd like to cite our paper.
 
-We thank [Chankyu Lee](https://github.com/chan8972) for replying our email about the evaluation details about the ```outdoor_day1``` scene.
+We thank [Chankyu Lee](https://github.com/chan8972) for replying our email about the evaluation details about ```outdoor_day1``` scene.
