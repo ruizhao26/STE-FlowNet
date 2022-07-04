@@ -12,10 +12,10 @@ Peking University
 
 * [STEFlow](#Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation.)
   * [Environments](#Environments)
-  * [Prepare the Data](*Prepare the Data)
-    * [Encode the events of MVSEC](*Encode the events of MVSEC)
-    * [Prepare the ground truth of MVSEC for Testing](*Prepare the ground truth of MVSEC for Testing)
-    * [Download the pretrained models](*Download the pretrained models)
+  * [Prepare the Data](*Prepare\ the\ Data)
+    * [Encode the events of MVSEC](*Encode\ the\ events\ of\ MVSEC)
+    * [Prepare the ground truth of MVSEC for Testing](*Prepare\ the\ ground\ truth\ of\ MVSEC\ for\ Testing)
+    * [Download the pretrained models](*Download\ the\ pretrained\ models)
   * [Evaluate](*Evaluate)
   * [Train](*Train)
   * [Citation](*Citations)
@@ -104,7 +104,7 @@ python3 main_steflow_dt4.py -e \
 
 Note that we have provided a better pretrained model for evaluation, which is slightly different with the original results shown in paper. In more detail, the model achieves better results in all three indoor scenes and demonstrates better generalization. However, the model degrates only in outdoor scene. The following table shows the detailed results.
 
-<img src="https://github.com/ruizhao26/STE-FlowNet/blob/main/fig/Results.png" width="100%">
+<img src="https://github.com/ruizhao26/STE-FlowNet/blob/main/fig/Results.png" width="85%">
 
 
 
