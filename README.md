@@ -10,7 +10,7 @@ Ziluo Ding, Rui Zhao, Jiyuan Zhang, Tianxiao Gao, Ruiqin Xiong, Zhaofei Yu and T
 
 Peking University
 
-* [STEFlow](Spatio-Temporal-Recurrent-Networks-for-Event-Based-Optical-Flow-Estimation.)
+* [STEFlow](Spatio--Temporal-Recurrent-Networks-for-Event--Based-Optical-Flow-Estimation.)
   * [Environments](#Environments)
   * [Prepare the Data](#Prepare-the-Data)
     * [Encode the events of MVSEC](#Encode-the-events-of-MVSEC)
