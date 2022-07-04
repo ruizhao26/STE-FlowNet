@@ -12,14 +12,14 @@ Peking University
 
 * [STEFlow](#Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation.)
   * [Environments](#Environments)
-  * [Prepare the Data](*Prepare-the-Data)
-    * [Encode the events of MVSEC](*Encode-the-events-of-MVSEC)
-    * [Prepare the ground truth of MVSEC for Testing](*Prepare-the-ground-truth-of-MVSEC-for-Testing)
-    * [Download the pretrained models](*Download-the-pretrained-models)
-  * [Evaluate](*Evaluate)
-  * [Train](*Train)
-  * [Citation](*Citations)
-  * [Acknowledgement](*Acknowledgement)
+  * [Prepare the Data](#Prepare-the-Data)
+    * [Encode the events of MVSEC](#Encode-the-events-of-MVSEC)
+    * [Prepare the ground truth of MVSEC for Testing](#Prepare-the-ground-truth-of-MVSEC-for-Testing)
+    * [Download the pretrained models](#Download-the-pretrained-models)
+  * [Evaluate](#Evaluate)
+  * [Train](#Train)
+  * [Citation](#Citations)
+  * [Acknowledgement](#Acknowledgement)
 
 ## Environments
 
