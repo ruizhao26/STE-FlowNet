@@ -2,13 +2,14 @@
 
 This repository contains the official source code for our paper:
 
-[Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation.](https://arxiv.org/pdf/2109.04871.pdf)
-
-AAAI 2022
-
-Ziluo Ding, Rui Zhao, Jiyuan Zhang, Tianxiao Gao, Ruiqin Xiong, Zhaofei Yu and Tiejun Huang
-
+Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation.  
+AAAI 2022  
+Ziluo Ding, Rui Zhao, Jiyuan Zhang, Tianxiao Gao, Ruiqin Xiong, Zhaofei Yu and Tiejun Huang  
 Peking University
+
+Paper:  
+[AAAI version](https://ojs.aaai.org/index.php/AAAI/article/view/19931)  
+[Arxiv version](https://arxiv.org/pdf/2109.04871.pdf)
 
 * [STEFlow](#Spatio--Temporal-Recurrent-Networks-for-Event--Based-Optical-Flow-Estimation.)
   * [Environments](#Environments)
@@ -152,7 +153,18 @@ python3 main_steflow_dt4.py --lr 2e-4 -b 8
 
 If you find this code useful in your research, please consider citing our paper.
 AAAI version: 
-Comming Soon !
+
+```
+@inproceedings{ding2021spatio,
+  title={Spatio-temporal recurrent networks for event-based optical flow estimation},
+  author={Ding, Ziluo and Zhao, Rui and Zhang, Jiyuan and Gao, Tianxiao and Xiong, Ruiqin and Yu, Zhaofei and Huang, Tiejun},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
+  volume={36},
+  number={01},
+  pages={525--533},
+  year={2022}
+}
+```
 
 Arxiv version:
 
