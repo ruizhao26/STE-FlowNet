@@ -1,11 +1,12 @@
-# Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation.
+## [AAAI 2022] Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation
+
+<h4 align="center"> Ziluo Ding, Rui Zhao, Jiyuan Zhang, Tianxiao Gao, Ruiqin Xiong, Zhaofei Yu, Tiejun Huang </h4>
+<h4 align="center"> Peking University </h4><br> 
 
 This repository contains the official source code for our paper:
 
 Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation.  
-AAAI 2022  
-Ziluo Ding, Rui Zhao, Jiyuan Zhang, Tianxiao Gao, Ruiqin Xiong, Zhaofei Yu and Tiejun Huang  
-Peking University
+AAAI 2022 
 
 Paper:  
 [AAAI version](https://ojs.aaai.org/index.php/AAAI/article/view/19931)  
